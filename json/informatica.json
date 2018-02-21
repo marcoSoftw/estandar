@@ -1,0 +1,80 @@
+{
+    "arrayInformatica":[{
+            
+            "img": "0.jpg",
+            "marca": "Apple",
+            "detalle": "Iphone 6 con 64gb de memoria interna",
+            "disponibilidad": "En Stock",
+            "precio": 2000000
+            
+        },
+		{
+            
+            "img": "1.jpg",
+            "marca": "Kingstom",
+            "detalle": "SSD 240 gb Kingstom",
+            "disponibilidad": "En Stock",
+            "precio": 88
+            
+        },
+        {
+            
+            "img": "2.jpg",
+           "marca":"Seagate",
+            "detalle":"Disco Duro Seagate 1tb 7200rpm",
+            "disponibilidad":"En Stock",
+            "precio": 42
+            
+        },
+        {
+            "img": "3.jpg", 
+            "marca":"Intel",
+            "detalle":"Procesador Intel Core i5-8400 2.8GHZ LGA 1151G8 6MB",
+            "disponibilidad":"En Stock",
+            "precio": 190
+        },
+        {
+            "img": "4.jpg",
+            "marca":"HP",
+            "detalle":"Impresora HP Multifuncion con gran calidad en copias",
+            "disponibilidad":"En Stock",
+            "precio": 20000
+        },
+        {
+            "img": "5.jpg",
+            "marca":"Kingstom",
+            "detalle":"Memória Kingston HyperX Fury Black DDR4 4GB 2400MHz",
+            "disponibilidad":"En Stock",
+            "precio": 56
+        },
+        {
+            "img": "6.jpg",
+            "marca":"AMD",
+            "detalle":"Procesador AMD Ryzen R7-1700X 3.8GHz AM4 20MB",
+            "disponibilidad":"En Stock",
+            "precio": 370
+        },
+        {
+           "img": "7.jpg",
+            "marca":"Asus",
+            "detalle":"Placa Madre Asus Prime B250M-Plus con Soquete LGA 1151, compatible con los nuevos procesadores de Intel",
+            "disponibilidad":"En Stock",
+            "precio": 100
+        },
+     
+        {
+            "img": "8.jpg",
+            "marca":"Gigabyte",
+            "detalle":"Placa Madre Gigabyte AB350-Gaming para AMD (AM4), compatible con los nuevos Ryzen",
+            "disponibilidad":"En Stock",
+            "precio": 115
+        },
+        {
+            "img": "9.jpg",
+            "marca":"HP",
+            "detalle":"Notebook HP X360 15-BK157CL Intel Core i5 2.5GHz / Memória 8GB / HD 500GB + SSD 8GB / 15.6 / Windows 10",
+            "disponibilidad":"En Stock",
+            "precio": 20000
+        }
+    ]
+}
