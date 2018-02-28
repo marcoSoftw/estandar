@@ -259,12 +259,12 @@ body{
     
    position: relative;
    margin:7% auto;
-   background-color: azure ;
+    background-color: #399;
    color:#333;
-   width:50%;
-   max-width: 555px;
-    text-align: center;
-    font-size: 45px;
+   width:40%;
+  
+   text-align: center;
+   font-size: 45px;
 
 }
 
@@ -278,11 +278,30 @@ body{
    width:50%;
    max-width: 555px;
    text-align: center;
-   font-size: 35px;
+   font-size: 28px;
    
 }
+
+ input{
+  	 padding-top: 10px;
+  	 padding-bottom: 10px;
+	 text-align: center;
+	 font-size: 28px;
+	 margin-top: -60px;
+	 
+}
+ input#totalText{
+	 color: oldlace; 
+	 background-color: #399;
+	 border: 0;
+	 font-size: 48px;
+	 width: 300px;
+	 
+}
+
 .cantidad{
-	font-size: 40px;
+	font-size: 30px;
+	
 }
 
 a.popup-cerrar {
