@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <title>Principal</title>
 
-    <script src="../js/index.js"></script>
     <link rel="stylesheet" href="../css/estilos.css">
     <script language="javascript" src="../js/jquery-3.2.1.min.js"></script>
 
@@ -303,18 +302,19 @@
        <form >    
                  
                 <div>
-					 <h3>Ingrese cantidad</h3>
-					 <input type="text" align="center"  id="cantidad"  onChange="calculo(this.value, precio2);">
+					 <h3>Cantidad</h3>
+					 
+					 <input type="number" min="1" max="100" id="cantidad" autofocus onChange="calculo(this.value, precio2);">
 
 					 <h3>Total</h3>
-					<input type="text" align="center" id="totalText" readonly>
+					<input type="text" id="totalText" readonly>
 				</div>
        </form>
                  <br>
 
              <div >
 
-             <input onclick="agregarLista(), $('#agregar, .window').hide()" visibility= "hidden" class="submit1" type="submit" value="Confirmar"  >
+             <input onclick="agregarLista(), $('#agregar, .window').hide()" visibility= "hidden" class="boton" type="submit" value="Confirmar"  >
             
              </div>
              <br>
@@ -328,15 +328,7 @@
 
 
 
-         function detalleModal(){
-
-                    document.getElementById('detalleModal1').innerHTML = detalle2;
-
-                    document.getElementById('detalleModal2').innerHTML = precio2;
-
-                    console.log("El precio para el calculo es= " + precio2);
-
-            }
+       
 
 
          var list=Array();
@@ -344,15 +336,13 @@
 
         function agregarLista(){
 
-
-
              var saldo=0;
-            var saldoActual=0;
-            var saldoCargar=0;
+             var saldoActual=0;
+             var saldoCargar=0;
 
 
              saldoActual  = sessionStorage.getItem("saldo");
-            saldoCargar = document.getElementById("totalText").value;
+             saldoCargar = document.getElementById("totalText").value;
 
             if(!saldoActual){
 
@@ -370,7 +360,7 @@
 
                     var saldo = sessionStorage.setItem("saldo", saldoActual);
 
-                          var  totalDisponible=0;
+                    var  totalDisponible=0;
                     var valorDescripcion = detalle2;
                     var valorPrecioUnitario = precio2;
                     var valorCantidad = document.getElementById("cantidad").value;
@@ -380,15 +370,23 @@
             total();
 
             function total () {
+
                  async: true;
 
                   var  totalActual = sessionStorage.getItem("total");
 
-                if(!totalActual){
+				if(valorSubtotal==0){
+					console.log("Subtotal es  " + valorSubtotal);
+					window.alert("No se ingresaron datos validos");
+					window.location="/pages/detalle.html";
+				}else{
+			
+                	if(!totalActual){
 
                     totalActual=0;
                 }
-
+				
+				
                  console.log("El total actual es " + totalActual);
 
                  var totalNuevo  = (parseInt(totalActual) + parseInt(valorSubtotal));
@@ -415,16 +413,19 @@
 
 				function mensaje(){
 
-				window.alert("Se agregó el producto al carrito!");
+								window.alert("Se agregó el producto al carrito!");
+								
 
+							}
+
+                    	}
 					}
-
-                    }
 
                  }
                     else{
 
                         alert("No se puede agregar el producto, consultar la disponibilidad de saldo en la cuenta!");
+						window.location="/pages/detalle.html";
                     }
 
                 }
